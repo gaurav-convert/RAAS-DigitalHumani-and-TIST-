@@ -22,7 +22,7 @@ You can find the list of reforestation organizations from all over the world in 
 
 You can get all the above information in here: https://www.digitalhumani.com/
 
-Detailed guide on How to integrate Tree Planting API with Zapier and generates certificate for user 
+**Detailed guide on How to integrate Tree Planting API with Zapier and generates certificate for user**
 
 You can get started using the API by registering on the DigitalHumani dashboard at Dashboard. Once signed up, navigate to the “Developer” page to find your API key. You’ll need that key to authenticate with the API. 
 There is an API that can help to plant single/multiple trees accordingly.
@@ -39,42 +39,45 @@ Request Body- (sends data in json format)
 
   You can get all the API related detailed information on this Page.
 
-You can create a Google Form which will be used to collect information like:
+**You can create a Google Form which will be used to collect information like:**
 
-A Password field can be created to limit the access to few users by providing data validation to the Password field.
+**Password**-A **Password** field can be created to limit the access to few users by providing data validation to the Password field.
 
-
-
-
-
-NAME- User Name for TIST Certificate
-Email- User’s email for the request body of the DigitalHumani and TIST API 
-Number of Trees wants to plant- treeCount for the request body of the DigitalHumani API
+![TestPassword](https://user-images.githubusercontent.com/47526754/208227944-74f9c39e-dec3-472d-9afd-1c08c987a308.png)
 
 
+
+**NAME**- User Name for TIST Certificate
+**Email**- User’s email for the request body of the DigitalHumani and TIST API 
+**Number of Trees wants to plant**- treeCount for the request body of the DigitalHumani API
+
+![Form](https://user-images.githubusercontent.com/47526754/208227955-2c61c13e-9eea-41e3-90db-2273cfe7818a.png)
 
 
 Submitting the Google Form will trigger the Zapier’s Flow that hits DigitalHumani and TIST API.
 
 
-You can create a zap in Zapier using a trigger “New Form Response” comes from Google Form. It will fetch “treeCount” and “User’s email” from the Form Response for the request body of the API.(“enterpriseId” and “projectId” remain static by default), after the flow hits the Tree Planting API it will move to TIST API to create a certificate.
+You can create a zap in Zapier using a trigger “New Form Response” comes from Google Form. It will fetch “treeCount” and “User’s email” from the Form Response for the request body of the API.(“enterpriseId” and “projectId” remain static by default).
 
 
+![FormResponse](https://user-images.githubusercontent.com/47526754/208227956-a49b96d8-9ce0-4729-b856-16a3593a3891.png)
 
-
-
+After the flow hits the Tree Planting API it will move to TIST API to create a certificate.
+ 
+![PlantTreeRequest](https://user-images.githubusercontent.com/47526754/208227957-5c90658e-f548-4edb-bf60-a5d0eea3cc84.png)
 
 You can also get the TIST API (Provided by the TIST Reforestation Organization support) that sends Tree Plant Certificates to the user's email and organization’s Email(Your organization Email) 
 
-.
+![CertificateRequest](https://user-images.githubusercontent.com/47526754/208227951-c801bc48-9bca-4768-a662-5ffcd95cc723.png)
+
 Certificate API Request Method:- POST
 Certificate API Request Body:- 
 			{
-   "Name": " user name from the Form Response",
-   "User_email": "user’s email from the Form Response where user will receives certificate",
-   "Company_email": "Email of your organization where you also receives a copy of  the user’s certificate",
-   "Date": "Date can also be fetched from the Form Response in DD-MM-YYYY",
-   "Tree": "treeCount from the Form Response"
+   "**Name**": " user name from the Form Response",
+   "**User_email**": "user’s email from the Form Response where user will receives certificate",
+   "**Company_email**": "Email of your organization where you also receives a copy of  the user’s certificate",
+   "**Date**": "Date can also be fetched from the Form Response in DD-MM-YYYY",
+   "**Tree**": "treeCount from the Form Response"
 
 }
 
