@@ -72,15 +72,15 @@ Request Method - POST
 
 
 3. You can create a zap in Zapier using a trigger “**New Form Response**” comes from Google Form. It will fetch “_**treeCount**_” and “_**User’s email**_” from the Form Response for the request body of the API.(“_**enterpriseId**_” and “_**projectId**_” remain static by default).</br></br>
-
+	**Form** : </br></br>
 
 	![FormResponse](https://user-images.githubusercontent.com/47526754/208227956-a49b96d8-9ce0-4729-b856-16a3593a3891.png)</br></br>
 
-    After the flow hits the **Tree Planting API** it will move to **TIST API** to create a certificate.</br></br>
+	**Tree Planting API** : </br></br>
  
 	![PlantTreeRequest](https://user-images.githubusercontent.com/47526754/208227957-5c90658e-f548-4edb-bf60-a5d0eea3cc84.png)</br></br>
-
-    You can also get the **TIST API** (Provided by the TIST Reforestation Organization support) that sends Tree Plant Certificates to the user's email and organization’s Email(Your organization Email) </br></br>
+	**Certificate Generation API** : </br></br>
+    You can get the **TIST API** (Provided by the TIST Reforestation Organization support) that sends Tree Plant Certificates to the user's email and organization’s email(Your organization Email) </br></br>
 
 	![CertificateRequest](https://user-images.githubusercontent.com/47526754/208227951-c801bc48-9bca-4768-a662-5ffcd95cc723.png)</br></br>
 
@@ -97,6 +97,6 @@ Request Method - POST
 	 
 			 
 
-You can use Zapier to fetch the certificate from the email and save in a database as well.
+You can use Zapier to fetch the attached certificate file from the email and save it in a database as well.
 
-This TIST API will send certificates to end users as an appreciation.
+TIST API will send certificates to end users as an appreciation.
