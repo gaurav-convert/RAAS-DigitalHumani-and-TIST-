@@ -39,7 +39,7 @@ Request Method - POST
 	      "user": “End user’s Email  by whom the trees were planted”[Dynamic Value]  
 	      }  
 	      
-![PostReqDigitalHumani](https://user-images.githubusercontent.com/47526754/208604980-13c5a859-a065-41e4-a162-0f92f6911dfe.png)<br><br>
+<br><br>![PostReqDigitalHumani](https://user-images.githubusercontent.com/47526754/208604980-13c5a859-a065-41e4-a162-0f92f6911dfe.png)<br><br>
 
 
 
